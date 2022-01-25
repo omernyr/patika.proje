@@ -3,7 +3,7 @@
 
 # In[86]:
 
-
+#-------tersine cevirme--------#
 list = [[1, 2], [3, 4], [5, 6, 7]]
 
 
@@ -22,3 +22,13 @@ list[2].reverse()
 
 list
 
+
+
+#-------flatten seklinde gosterme------#
+
+list = [["1",'a',['cat'],"2"],[[["3"]],'dog'],"4","5"]
+flatlist=[]
+for sublist in list:
+    for element in sublist:
+        flatlist.append(element)
+print(flatlist)
